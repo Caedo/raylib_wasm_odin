@@ -71,7 +71,7 @@ update :: proc() {
             c.z = rand.float32_range(-10, 10)
         }
 
-        for c in &cubeColors {
+        for &c in &cubeColors {
             c = rl.Color {
                 u8(rand.uint32()),
                 u8(rand.uint32()),
